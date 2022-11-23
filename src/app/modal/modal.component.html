@@ -1,0 +1,15 @@
+<section id="open-modal-container" *ngIf="!active">
+	<button (click)="active=true">Abrir modal</button>
+</section>
+<section id="modal-container" *ngIf="active">
+	<!-- <div id="bg"></div> -->
+	<div id="content-container">
+		<div class="exit"><span (click)="active=false">X</span></div>
+		<div id="content">
+			<ng-content></ng-content>
+		</div>
+	</div>
+</section>
+
+
+

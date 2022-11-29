@@ -19,8 +19,19 @@
     margin-top: 50px;
 }
 
-#modal-container > #content-container #content {
+#modal-container > #content-container #content,
+#modal-container > #content-container #buttons-container {
     padding: 0 20px 10px 20px;
+}
+
+#api-button {
+    margin: 10px;
+    font-size: 16px;
+    font-family: sans-serif;
+    padding: 5px 10px;
+    border: 1px dashed gray;
+    border-radius: 20px;
+    cursor: pointer;
 }
 
 .exit {
@@ -35,3 +46,4 @@
     font-weight: bold;
     font-family: cursive;
 }
+

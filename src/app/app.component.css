@@ -1,0 +1,10 @@
+
+#api-modal-container {
+    display: flex;
+}
+
+.submodal {
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+}

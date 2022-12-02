@@ -1,0 +1,12 @@
+
+<div *ngIf="apiResponse != undefined">
+	<img [src]="apiResponse.image" style="height: 100px">
+	<br>
+	<h3>Resposta: {{apiResponse.answer}}</h3>
+
+</div>
+<h2>Adivinhe o resultado (Yes ou No)</h2>
+
+<button (click)="getUrl()">Yes</button>
+<button (click)="getUrl()">No</button>
+

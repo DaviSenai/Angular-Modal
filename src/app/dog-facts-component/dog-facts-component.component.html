@@ -1,0 +1,6 @@
+<h2>Fatos sobre Dogs</h2>
+<div *ngIf="apiResponse != undefined">
+	<h3>Curiosidade: {{apiResponse.facts[0]}}</h3>
+</div>
+
+<button (click)="getUrl()">Next</button>

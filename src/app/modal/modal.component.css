@@ -12,7 +12,7 @@
 }
 
 #modal-container > #content-container {
-    width: 60vw;
+    max-width: 60vw;
     height: min-content;
     background: #ffffff;
     border-radius: 20px;
@@ -32,6 +32,10 @@
     border: 1px dashed gray;
     border-radius: 20px;
     cursor: pointer;
+}
+
+#api-button:hover {
+    border: 1px double gray;
 }
 
 .exit {

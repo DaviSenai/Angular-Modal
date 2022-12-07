@@ -8,13 +8,15 @@ import { YesNoComponentComponent } from './yes-no-component/yes-no-component.com
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { DogFactsComponentComponent } from './dog-facts-component/dog-facts-component.component';
+import { AppFilterComponent } from './app-filter/app-filter.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ModalComponent,
     YesNoComponentComponent,
-    DogFactsComponentComponent
+    DogFactsComponentComponent,
+    AppFilterComponent,
   ],
   imports: [
     BrowserModule,

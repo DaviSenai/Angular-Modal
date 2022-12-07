@@ -1,5 +1,13 @@
-<h1>Filtro</h1>
-<img width="200px" src="https://http2.mlstatic.com/D_NQ_NP_871327-MLB50046547213_052022-O.webp">
-<p>Procurar domínios</p>
-<input type="text" placeholder="Nome do Domínio" (change)="refreshTable(nameDomain.value, table)" #nameDomain>
-<div id="table" #table>Table</div>
+<section>
+    <h1>Filtro</h1>
+    <img width="200px" src="https://http2.mlstatic.com/D_NQ_NP_871327-MLB50046547213_052022-O.webp">
+    <p>Selecione um livro</p>
+    <select (change)="refreshTable(bookName.value, table)" #bookName *ngIf="this.apiResponse != undefined">
+        <option *ngFor="let item of this.apiResponse.results;">{{item.title}}</option>
+    </select>
+    <div id="table" #table *ngIf="this.apiResponse != undefined">
+        <img src="{{this.imgCover}}">
+        <h2>Categoria: </h2><p>{{this.category}}</p>
+        <h2>Assunto: </h2><p>{{this.subjects}}</p>
+    </div>
+</section>
